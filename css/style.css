@@ -1,0 +1,31 @@
+:root {
+    /* Color styles */
+--black: #1F1F1F;
+--blue: #3A6DE7;
+--light-grey: #BEBCBB;
+--dark-blue: #161C3B;
+--red: #CD3D0F;
+--lavish-white: #D9DADC;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mybg-black {
+    background-color: var(--black);
+}
+.mybg-light-grey {
+    background-color: var(--light-grey);
+}
+.mybg-dark-blue {
+    background-color: var(--dark-blue);
+}
+.mybg-blue {
+    background-color: var(--blue);
+}
+.white {
+    color: var(--lavish-white);
+}
+/* header img {
+    height: 20px;
+/* } */ */
