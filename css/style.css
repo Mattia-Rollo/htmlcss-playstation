@@ -91,11 +91,11 @@ div.mycard {
     text-shadow: 2px 2px 6px var(--black);
 }
 ul.link-footer {
-    
+    padding: 0;
 }
 .link-footer li {
     list-style: none;
-    
+    padding: 0;
 }
 
 
