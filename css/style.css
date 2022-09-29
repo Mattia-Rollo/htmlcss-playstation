@@ -90,6 +90,13 @@ div.mycard {
 .it-take-two {
     text-shadow: 2px 2px 6px var(--black);
 }
+ul.link-footer {
+    
+}
+.link-footer li {
+    list-style: none;
+    
+}
 
 
 @media screen and (min-width: 576px) {
@@ -97,7 +104,7 @@ div.mycard {
 }
 
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     #ps-plus {
         background-image: url('../img/ps-plus-april-monthly-games-featured-image-block.png');
         background-repeat: no-repeat;
