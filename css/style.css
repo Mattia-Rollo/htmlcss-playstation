@@ -6,11 +6,11 @@
 --dark-blue: #161C3B;
 --red: #CD3D0F;
 --lavish-white: #D9DADC;
-
+--my-white: white; 
 }
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 .mybg-black {
     background-color: var(--black);
 }
@@ -26,6 +26,41 @@ body {
 .white {
     color: var(--lavish-white);
 }
-/* header img {
-    height: 20px;
-/* } */ */
+header .sony-logo img{
+    height: 30px;
+    padding: 5px;
+ }
+main a.nav-link {
+    color: black;
+}
+.dropdown-toggle::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+     vertical-align: middle;
+    border: 0;
+    font-size: 0.5rem;
+    color: grey;
+}
+main .mybtn {
+    padding: 0 10px;
+    border-radius: 25px;
+    background-color: var(--black);
+    color: var(--my-white);
+    border: var(--black);
+
+}
+#hero {
+    background-image: url('../img/jumbo-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+#hero img {
+    max-width: 50%;
+}
+div.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
