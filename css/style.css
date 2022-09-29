@@ -26,6 +26,9 @@
 .white {
     color: var(--lavish-white);
 }
+.blue {
+    color: var(--blue);
+}
 header .sony-logo img{
     height: 30px;
     padding: 5px;
@@ -43,11 +46,11 @@ main a.nav-link {
     color: grey;
 }
 main .mybtn {
-    padding: 0 10px;
+    padding: 10px;
     border-radius: 25px;
-    background-color: var(--black);
     color: var(--my-white);
     border: var(--black);
+    text-decoration: none;
 
 }
 #hero {
@@ -63,4 +66,10 @@ main .mybtn {
 div.card {
     border-radius: 10px;
     overflow: hidden;
+    transition: margin 0.5s;
+}
+div.card:hover {
+    margin-top: -3px;
+    cursor: pointer;
+
 }
