@@ -151,7 +151,7 @@ div.mycard {
     background-color: black;
 } */
 
-/****************Effetti sui bottoni ***********/
+/***********Effetti sui bottoni *********/
 
 nav .mybtn:hover {
     outline: 3px solid black;
@@ -161,9 +161,9 @@ nav .mybtn:hover {
     outline: 3px solid var(--blue);
     outline-offset: 3px;
 }
-#hero .border-btn:hover {
-    border: 1px solid var(--red);
-    opacity: 1;
+#hero .mybtn:hover {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
 }
 #hero-2 .mybtn:hover, #prodotti .mybtn:hover {
     outline: 3px solid var(--blue);
