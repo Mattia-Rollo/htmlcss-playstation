@@ -11,6 +11,9 @@
 /* body {
     font-family: Arial, Helvetica, sans-serif;
 } */
+/* .container-fluid {
+    padding: 4rem;
+} */
 .mybg-black {
     background-color: var(--black);
 }
