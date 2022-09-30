@@ -46,11 +46,13 @@ main a.nav-link {
     color: grey;
 }
 .mybtn {
-    padding: 10px;
+    padding: 3px 15px;
     border-radius: 25px;
     color: var(--my-white);
     border: var(--black);
     text-decoration: none;
+    vertical-align: middle;
+    transition: all 0.25s;
 
 }
 #hero {
@@ -69,12 +71,16 @@ div.mycard {
     transition: all 0.5s;
     opacity: 0.5;
 }
+#heading 
 #heading div.mycard:hover {
     transform: translateY(-10px);
     cursor: pointer;
     box-shadow: 0px 10px 20px 1px var(--black);
     opacity: 1;
 
+}
+#heading .mybtn:hover {
+    background-color: var(--black);
 }
 #nuove-uscite div.mycard:hover {
     opacity: 1;
@@ -95,7 +101,7 @@ ul.link-footer {
 }
 .link-footer li {
     list-style: none;
-    padding: 0;
+    padding: -1rem;
 }
 
 
