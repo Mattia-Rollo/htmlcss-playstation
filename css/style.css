@@ -14,8 +14,22 @@
 /* .container-fluid {
     padding: 4rem;
 } */
+.mybtn {
+    padding: 3px 15px;
+    border-radius: 1.5rem;
+    color: var(--my-white);
+    border: var(--black);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+
+
 .mybg-black {
     background-color: var(--black);
+}
+.mybg-lavish-white {
+    background-color: var(--lavish-white);
 }
 .mybg-light-grey {
     background-color: var(--light-grey);
@@ -29,7 +43,7 @@
 .white {
     color: var(--lavish-white);
 }
-.blue {
+.myblue {
     color: var(--blue);
 }
 .mybg-red {
@@ -38,7 +52,7 @@
 header .sony-logo img{
     height: 30px;
     padding: 5px;
- }
+}
 main a.nav-link {
     color: black;
 }
@@ -46,37 +60,33 @@ main a.nav-link {
     content: '\f078';
     font-family: "Font Awesome 5 Free";
     font-weight: 900; 
-     vertical-align: middle;
+    vertical-align: middle;
     border: 0;
     font-size: 0.5rem;
     color: grey;
 }
-.mybtn {
-    padding: 3px 15px;
-    border-radius: 1.5rem;
-    color: var(--my-white);
-    border: var(--black);
-    text-decoration: none;
-    transition: all 0.25s;
-}
+
+
+
+/**************menu a tendina sulla nav **********/
+
 nav .dropdown {
     position: static;
 }
 #mynav {
     box-shadow: 0px 2px 15px 2px black;
 }
-#mynav {
-    z-index: 2000;
-}
+
+
 #mynav .dropdown-menu {
     width: 100%;
-    position: absolute;
-    top: 73px;
-    border: none;
+    /* top: 74px; */
+    border: 0;
     border-radius: 0;
     left: 0;
-    z-index: 1;
-    
+    margin-top: 0;
+    /* box-shadow: 0px 10px 15px 2px black;
+    z-index: 0; */
 }
 
 
@@ -123,9 +133,9 @@ div.mycard {
     border: 1px solid var(--red);
     
 } */
-.border-btn {
+/* .border-btn {
     display: inline-block;
-    /* position: relative; */
+    position: relative;
     border-radius: 1.5rem;
     padding: 0.3rem;
     background-color: transparent;
@@ -134,17 +144,34 @@ div.mycard {
     transition: all 0.5s;
     margin-left: -0.6rem;
     opacity: 0.8;
-}
+} */
 
-nav .border-btn:hover {
+/* nav .border-btn:hover {
     border: 1px solid var(--black);
     background-color: black;
-}
+} */
+
+/****************Effetti sui bottoni ***********/
+
 nav .mybtn:hover {
-    background-color: black; 
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
+#playstation-5 .mybtn:hover {
+    outline: 3px solid var(--blue);
+    outline-offset: 3px;
 }
 #hero .border-btn:hover {
     border: 1px solid var(--red);
+    opacity: 1;
+}
+#hero-2 .mybtn:hover, #prodotti .mybtn:hover {
+    outline: 3px solid var(--blue);
+    outline-offset: 3px;
+}
+#games .my-active {
+    outline: 3px solid var(--blue);
+    outline-offset: 3px;
     opacity: 1;
 }
 
@@ -188,5 +215,13 @@ ul.link-footer {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 90% 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #ps-plus {
+        background-position: 80% 0;
+    }
+    #play-now {
+        background-position: 80% 0;
     }
 }
