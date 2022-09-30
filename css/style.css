@@ -63,6 +63,9 @@ nav .dropdown {
     position: static;
 }
 #mynav {
+    box-shadow: 0px 2px 15px 2px black;
+}
+#mynav {
     z-index: 2000;
 }
 #mynav .dropdown-menu {
