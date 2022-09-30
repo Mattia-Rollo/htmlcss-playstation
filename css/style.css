@@ -62,9 +62,18 @@ main a.nav-link {
 nav .dropdown {
     position: static;
 }
-nav .dropdown-menu {
+#mynav {
+    z-index: 2000;
+}
+#mynav .dropdown-menu {
     width: 100%;
-    top: 74px;
+    position: absolute;
+    top: 73px;
+    border: none;
+    border-radius: 0;
+    left: 0;
+    z-index: 1;
+    
 }
 
 
