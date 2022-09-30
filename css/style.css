@@ -59,7 +59,13 @@ main a.nav-link {
     text-decoration: none;
     transition: all 0.25s;
 }
-
+nav .dropdown {
+    position: static;
+}
+nav .dropdown-menu {
+    width: 100%;
+    top: 74px;
+}
 
 
 #hero {
@@ -107,16 +113,25 @@ div.mycard {
 } */
 .border-btn {
     display: inline-block;
+    /* position: relative; */
     border-radius: 1.5rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
     background-color: transparent;
     border: 1px solid transparent;
-    position: absolute;
+    
     transition: all 0.5s;
-    margin-left: -2px;
+    margin-left: -0.6rem;
     opacity: 0.8;
 }
-.border-btn:hover {
+
+nav .border-btn:hover {
+    border: 1px solid var(--black);
+    background-color: black;
+}
+nav .mybtn:hover {
+    background-color: black; 
+}
+#hero .border-btn:hover {
     border: 1px solid var(--red);
     opacity: 1;
 }
