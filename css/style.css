@@ -1,5 +1,4 @@
 :root {
-    /* Color styles */
 --black: #1F1F1F;
 --blue: #3A6DE7;
 --light-grey: #BEBCBB;
@@ -64,7 +63,7 @@ header .sony-logo img{
 main a.nav-link {
     color: black;
 }
-/********* freccia a lato di ogni link nel menu  *********/
+/********* nuova freccia lato link nel menu  *********/
 .dropdown-toggle::after {
     content: '\f078';
     font-family: "Font Awesome 5 Free";
@@ -103,7 +102,6 @@ div.mycard {
     transition: all 0.5s;
     opacity: 0.5;
 }
-
 /*************** HERO *******************/
 #hero {
     background-image: url('../img/jumbo-bg.png');
@@ -127,12 +125,12 @@ div.mycard {
 
 /***********Effetti sui bottoni *********/
 
+/************* effetto bordo attorno ai bottoni  ********/
+
 nav .mybtn:hover {
     outline: 3px solid black;
     outline-offset: 3px;
 }
-
-/************* effetto bordo attorno ai bottoni  ********/
 
 #playstation-5 .mybtn:hover {
     outline: 3px solid var(--blue);
@@ -164,9 +162,13 @@ nav .mybtn:hover {
     background-position: center;
     
 }
+/*** piccola ombreggiatura sul testo di it-take-two ***/
 .it-take-two {
     text-shadow: 2px 2px 6px var(--black);
 }
+
+/***************** footer **************/
+
 ul.link-footer {
     padding: 0;
 }
@@ -175,6 +177,7 @@ ul.link-footer {
     padding: -1rem;
 }
 
+/************ MEDIA QUERY ************+*/
 
 @media screen and (min-width: 576px) {
     
