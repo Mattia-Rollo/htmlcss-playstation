@@ -23,8 +23,13 @@
     transition: all 0.25s;
 }
 
+/**************** classi colori  **************/
 
+/********** colori background-color *************/
 
+.mybg-red {
+    background-color: var(--red);
+}
 .mybg-black {
     background-color: var(--black);
 }
@@ -40,15 +45,18 @@
 .mybg-blue {
     background-color: var(--blue);
 }
+
+/*********** colori testo  *****************/
+
 .white {
     color: var(--lavish-white);
 }
 .myblue {
     color: var(--blue);
 }
-.mybg-red {
-    background-color: var(--red);
-}
+
+/************* logo sony  **********+*****/
+
 header .sony-logo img{
     height: 30px;
     padding: 5px;
@@ -56,6 +64,7 @@ header .sony-logo img{
 main a.nav-link {
     color: black;
 }
+/********* freccia a lato di ogni link nel menu  *********/
 .dropdown-toggle::after {
     content: '\f078';
     font-family: "Font Awesome 5 Free";
@@ -65,18 +74,16 @@ main a.nav-link {
     font-size: 0.5rem;
     color: grey;
 }
-
-
-
-/**************menu a tendina sulla nav **********/
-
-nav .dropdown {
-    position: static;
-}
+/******* piccolo effetto shadow sotto alla nav **********/
 #mynav {
     box-shadow: 0px 2px 15px 2px black;
 }
 
+/******* menu a tedina lunghi tutta la pagina  ********/
+/***** tolto position realtive ***/
+nav .dropdown {
+    position: static;
+}
 
 #mynav .dropdown-menu {
     width: 100%;
@@ -88,8 +95,16 @@ nav .dropdown {
     /* box-shadow: 0px 10px 15px 2px black;
     z-index: 0; */
 }
+/********+ classe generale per tutte le card ********/
 
+div.mycard {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
 
+/*************** HERO *******************/
 #hero {
     background-image: url('../img/jumbo-bg.png');
     background-repeat: no-repeat;
@@ -99,12 +114,8 @@ nav .dropdown {
 #hero img {
     max-width: 50%;
 }
-div.mycard {
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s;
-    opacity: 0.5;
-}
+
+/********** effetto flottante sulle card  ******/
 
 #games div.mycard:hover {
     transform: translateY(-10px);
@@ -113,43 +124,6 @@ div.mycard {
     opacity: 1;
 
 }
-/* #heading .mybtn::before {
-    content: '';
-    display: block;
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 103%;
-    height: 110%;
-    transform: translate(-50%, -50%);
-    border: 1px solid var(--black);
-    border-radius: 20px;
-    transition: all 0.2s;
-}
-
-#heading .mybtn:hover::before {
-    visibility: visible;
-    border: 1px solid var(--red);
-    
-} */
-/* .border-btn {
-    display: inline-block;
-    position: relative;
-    border-radius: 1.5rem;
-    padding: 0.3rem;
-    background-color: transparent;
-    border: 1px solid transparent;
-    
-    transition: all 0.5s;
-    margin-left: -0.6rem;
-    opacity: 0.8;
-} */
-
-/* nav .border-btn:hover {
-    border: 1px solid var(--black);
-    background-color: black;
-} */
 
 /***********Effetti sui bottoni *********/
 
@@ -157,6 +131,9 @@ nav .mybtn:hover {
     outline: 3px solid black;
     outline-offset: 3px;
 }
+
+/************* effetto bordo attorno ai bottoni  ********/
+
 #playstation-5 .mybtn:hover {
     outline: 3px solid var(--blue);
     outline-offset: 3px;
@@ -174,6 +151,7 @@ nav .mybtn:hover {
     outline-offset: 3px;
     opacity: 1;
 }
+
 
 #nuove-uscite div.mycard:hover {
     opacity: 1;
